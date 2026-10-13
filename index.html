@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat Page</title>
+  
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  padding: 15px 20px;
+}
+
+.model {
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.sub {
+  margin-top: 12px;
+  color: #777;
+}
+
+.box {
+  width: 90%;
+  max-width: 730px;
+  height: 56px;
+  margin-top: 30px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+}
+
+.box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 0 10px;
+  background: transparent;
+}
+
+.round {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.round:hover {
+  background: #eee;
+}
+
+.options {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.opt {
+  padding: 11px 18px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.opt:hover {
+  background:white;
+}
+
+.footer {
+  text-align: center;
+  font-size: 13px;
+  color: grey;
+  padding: 15px;
+}
+  </style>
+</head>
+<body>
+
+  <div class="top">
+    <button class="model">My Chat ▾</button>
+  </div>
+
+  <div class="center">
+    <h1>How can I help you?</h1>
+    <p class="sub">Ask me anything</p>
+
+    <div class="box">
+      <button class="round">+</button>
+      <input type="text" placeholder="Type a message">
+      <button class="round">🎤</button>
+    </div>
+
+    <div class="options">
+      <button class="opt"> Image Generation</button>
+      <button class="opt"> AI Filters</button>
+      <button class="opt"> Upload file</button>
+      <button class="opt"> Help me with...</button>
+    </div>
+  </div>
+
+  <p class="footer">
+    © 2026 My Chat. By using this site you agree to our
+    <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
+  </p>
+
+</body>
+</html>
